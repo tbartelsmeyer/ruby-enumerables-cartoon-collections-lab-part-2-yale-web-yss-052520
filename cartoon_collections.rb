@@ -1,7 +1,7 @@
 def square_array(array)
   # Use an Enumerable to square every element in the passed in array
   # Return a new array of the results
-  array.map {|el| el**2}
+  array.map { |el| el**2 }
 end
 
 def summon_captain_planet(planeteer_calls)
@@ -13,6 +13,7 @@ end
 def long_planeteer_calls(planeteer_calls)
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
   # Return the boolean result of this check
+  planeteer_calls.any? { |el| el.length > 4 }
 end
 
 def find_valid_calls(planeteer_calls)
